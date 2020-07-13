@@ -2,8 +2,10 @@ extends ../components/page
 include ../components/banner
 include ../components/cta-block
 include ../components/popup-gauge
+include ../components/popup-includes
+include ../components/popup-exact-price
 include ../components/calculator-block
-include ../components/calculator
+include ../components/exact-price-block
 
 block title
   |Главная страница
@@ -14,8 +16,7 @@ block content
     +banner
     +cta-block
     +calculator-block
-    +calculator
-    .container
-      section
-        |biba
+    +exact-price-block
     +popup-gauge
+    +popup-includes
+    +popup-exact-price

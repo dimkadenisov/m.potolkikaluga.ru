@@ -1,13 +1,13 @@
-mixin popup-gauge(props = {})
+mixin popup-exact-price(props = {})
   include input
   include button
 
-  .popup.popup-gauge#popup-gauge&attributes(attributes)
+  .popup.popup-exact-price#popup-exact-price&attributes(attributes)
     form.popup__content
       span.popup__heading
-        |Вызвать замерщика
+        |УЗНАТЬ
         br
-        |БЕСПЛАТНО
+        |точную стоимость
       +input(placeholder="Введите ваше имя" equired="required" type="text" autocomplete="off" autocorrect="off" spellcheck="false" maxlength="50")
       +input(placeholder="Введите ваш телефон" required="required" type="tel" autocomplete="tel" autocorrect="off" spellcheck="false" maxlength="16")
       span.popup__privacy Нажимая на кнопку, Вы соглашаетесь на обработку персональных данных и соглашаетесь с

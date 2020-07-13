@@ -1,0 +1,38 @@
+.popup {
+	display: none;
+	background-color: transparent;
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		max-width: 785px;
+		padding: 50px 30px 130px;
+		border-radius: 50px;
+		background-color: var(--white);
+	}
+
+	&__heading {
+		display: block;
+		margin-bottom: 90px;
+		font-size: 75px;
+		text-align: center;
+		line-height: 1.1875;
+	}
+
+	&__privacy {
+		display: block;
+		margin-top: 30px;
+		margin-bottom: 70px;
+		font-size: 20px;
+		line-height: 24px;
+		text-align: center;
+	}
+}
+
+.fancybox-button.fancybox-close-small {
+	top: 40px;
+	right: 40px;
+	width: 80px;
+	height: 80px;
+}

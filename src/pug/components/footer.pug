@@ -1,5 +1,11 @@
 mixin footer(props = {})
+  include icon-link
+  include social-links
 
   .footer&attributes(attributes)
     .container
-      .footer__inner
+      .footer__content
+        +icon-link({iconId: 'phone', text: '+7 (4842) 33-34-82'})(href="tel:74842333482")
+        +social-links
+        span.adress г. Калуга, ул. Ленина, 102/ул. Театральная, 6, офис 4
+        a(href="mailto:info@potolkikaluga.ru").email info@potolkikaluga.ru

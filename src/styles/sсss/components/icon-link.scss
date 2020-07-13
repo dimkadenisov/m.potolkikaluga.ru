@@ -1,5 +1,5 @@
 .icon-link {
-	display: flex;
+	display: inline-flex;
 	align-items: center;
 	color: var(--primary);
 	font-weight: 500;
@@ -15,5 +15,9 @@
 	&:hover,
 	&:focus {
 		color: var(--hover);
+	}
+
+	&_big {
+		font-size: 64px;
 	}
 }

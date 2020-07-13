@@ -7,7 +7,70 @@
 
 	&__heading {
 		display: block;
-		font-size: 38px;
+		margin-bottom: 38px;
+		font-size: 45px;
+		line-height: 1.1875;
 		text-align: center;
+	}
+
+	&__content {
+		display: flex;
+		gap: 65px;
+		align-items: flex-start;
+		margin-bottom: 40px;
+	}
+}
+
+.calculator-input-label {
+	display: flex;
+	flex-shrink: 1;
+	font-size: 25px;
+	line-height: 30px;
+	text-transform: uppercase;
+
+	&__input {
+		width: 92px;
+		height: 82px;
+		padding: 20px 10px;
+		font-size: 30px;
+		text-align: center;
+		border: 1px solid var(--gray-100);
+		background: var(--gray-50);
+		box-shadow: inset 0px 7px 6px -7px var(--gray-300);
+		border-radius: 2px;
+		box-sizing: inherit;
+	}
+
+	&__hr {
+		width: 64px;
+		height: 1px;
+		border: none;
+		background-color: var(--gray-100);
+	}
+
+	&__summary {
+		font-size: 38px;
+		text-transform: none;
+	}
+
+	&_prev {
+		gap: 10px;
+	}
+
+	&_next {
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+.calculator-range {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 5px;
+	flex-grow: 1;
+
+	&__segment {
+		font-size: 45px;
 	}
 }

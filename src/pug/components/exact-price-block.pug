@@ -1,0 +1,16 @@
+mixin exact-price-block(props = {})
+  include heading-2
+  include heading-description
+  include icon-link
+  include button
+
+  .exact-price-block&attributes(attributes)
+    .container
+      .exact-price-block__content
+        +heading-2({tag: 'span'})
+          |Хотите узнать точную стоимость?
+        +heading-description(class="heading-description_small")
+          |Закажите бесплатный вызов замерщика или позвоните
+        +icon-link({iconId: 'phone', text: '+7 (4842) 33-34-82'})(href="tel:74842333482" class="icon-link_big")
+        +button({tag: 'a'})(data-fancybox="popup-exact-price" data-src="#popup-exact-price")
+          |Узнать точную стоимость
