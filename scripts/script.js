@@ -1,12 +1,11 @@
 "use strict";
 
 var setRangeBackground = function setRangeBackground(target) {
-  var min = target.min;
-  var max = target.max;
-  var percent = (max - min) * 0.01;
+  var min = target.min || 0;
+  var max = target.max || 100;
+  var percent = (max - min) / 100;
   var value = (target.value - min) / percent;
-  $(target).css('background', "linear-gradient(to right, #e50469 ".concat(value, "%, #e5e8ed ").concat(value, "%)"));
-  console.log(target.value, value);
+  target.style.background = "linear-gradient(to right, #e50469 ".concat(value, "%, #e5e8ed ").concat(value, "%)");
 };
 
 document.body.addEventListener('input', function (e) {
