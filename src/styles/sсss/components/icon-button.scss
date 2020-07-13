@@ -1,0 +1,72 @@
+.icon-button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	width: 100px;
+	height: 100px;
+	margin: 0;
+	padding: 0;
+	background-color: transparent;
+	border: none;
+	color: $white;
+	cursor: pointer;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 32px;
+	text-decoration: none;
+
+	&__icon {
+		width: 100px;
+		height: 100px;
+		color: $gray-600;
+	}
+
+	&:hover,
+	&:focus {
+		filter: brightness(0.9);
+	}
+
+	&_telegram {
+		width: 93px;
+		height: 93px;
+	}
+
+	&_viber {
+		width: 106;
+		height: 106px;
+	}
+
+	&_whatsapp {
+		width: 101px;
+		height: 101px;
+	}
+
+	// &_primary {
+	// 	background-color: $primary;
+
+	// 	.icon-button__icon {
+	// 		color: $white;
+	// 	}
+
+	// 	&:hover,
+	// 	&:focus {
+	// 		background-color: $primary-light;
+	// 	}
+	// }
+
+	// &_lightgray {
+	// 	.icon-button__icon {
+	// 		color: $gray-400;
+	// 	}
+
+	// 	&:hover,
+	// 	&:focus {
+	// 		background-color: darken($gray-200, 1%);
+	// 	}
+	// }
+
+	// &_gray-600 {
+	// 	background-color: $gray-600;
+	// }
+}

@@ -1,0 +1,12 @@
+.heading-2 {
+	display: block;
+	margin-bottom: 30px;
+	font-size: 53px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 1.1875;
+
+	&_black {
+		color: var(--black);
+	}
+}

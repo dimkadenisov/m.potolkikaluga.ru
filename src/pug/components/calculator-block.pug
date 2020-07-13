@@ -1,0 +1,6 @@
+mixin calculator-block(props = {})
+  include heading-2
+
+  .calculator-block&attributes(attributes)
+    +heading-2({tag: 'span'})(class="heading-2_black")
+      |Рассчитайте стоимость Вашего потолка прямо сейчас

@@ -1,0 +1,33 @@
+.price-block {
+	margin-top: 60px;
+	margin-bottom: 60px;
+	font-size: 43px;
+	line-height: 52px;
+
+	&__hr {
+		max-width: 500px;
+		height: 4px;
+		margin: 0 0 30px 0;
+		border: none;
+		background: var(--text);
+	}
+
+	&__price {
+		display: inline-block;
+
+		&_their {
+			margin-right: 40px;
+			color: var(--gray-300);
+		}
+
+		&_our {
+			span {
+				color: var(--primary);
+			}
+
+			sup {
+				line-height: 0.1;
+			}
+		}
+	}
+}

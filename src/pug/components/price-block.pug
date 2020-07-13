@@ -1,0 +1,22 @@
+mixin price-block(props = {})
+
+  .price-block&attributes(attributes)
+    b.price-block__tagline
+      |Качество по самой
+      br
+      |выгодной цене
+      br
+      |в Калуге
+    hr.price-block__hr
+    .d-flex
+      span.price-block__price.price-block__price_their
+        |У всех
+        br
+        |350 руб./м²
+      b.price-block__price.price-block__price_our
+        |А у нас
+        br
+        span
+          |199
+          sup *
+          |руб./м²

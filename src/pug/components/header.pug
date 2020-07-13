@@ -1,0 +1,11 @@
+mixin header(props = {})
+  include logo
+  include icon-link
+  include social-links
+
+  .header&attributes(attributes)
+    .container
+      .header__inner
+        +logo
+        +icon-link({iconId: 'phone', text: '+7 (4842) 33-34-82'})(href="tel:74842333482")
+        +social-links

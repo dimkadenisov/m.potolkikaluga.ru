@@ -1,0 +1,21 @@
+extends ../components/page
+include ../components/banner
+include ../components/cta-block
+include ../components/popup-gauge
+include ../components/calculator-block
+include ../components/calculator
+
+block title
+  |Главная страница
+
+block content
+  +header
+  main
+    +banner
+    +cta-block
+    +calculator-block
+    +calculator
+    .container
+      section
+        |biba
+    +popup-gauge

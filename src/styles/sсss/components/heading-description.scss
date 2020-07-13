@@ -1,0 +1,12 @@
+.heading-description {
+	display: block;
+	font-size: 45px;
+	font-weight: bold;
+	text-align: center;
+
+	&_accent {
+		color: var(--primary);
+		font-size: 67px;
+		line-height: 1;
+	}
+}

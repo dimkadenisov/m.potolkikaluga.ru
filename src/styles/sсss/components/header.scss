@@ -1,0 +1,23 @@
+.header {
+	position: relative;
+	z-index: 2;
+
+	&__inner {
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		height: 98px;
+	}
+
+	.logo {
+		position: absolute;
+		top: 0;
+		left: 30px;
+	}
+
+	.social-links {
+		position: absolute;
+		top: 125px;
+		right: 30px;
+	}
+}

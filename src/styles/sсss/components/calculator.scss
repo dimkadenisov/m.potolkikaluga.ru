@@ -1,0 +1,13 @@
+.calculator {
+	margin-bottom: 38px;
+	padding: 38px 60px;
+	border: 1px solid var(--gray-100);
+	box-shadow: 0px 14px 28px -15px var(--gray-300);
+	color: var(--black);
+
+	&__heading {
+		display: block;
+		font-size: 38px;
+		text-align: center;
+	}
+}

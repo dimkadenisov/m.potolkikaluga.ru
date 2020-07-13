@@ -1,0 +1,18 @@
+mixin banner(props = {})
+  include heading-1
+  include heading-description
+  include usp
+  include price-block
+  include girl
+
+  .banner&attributes(attributes)
+    .container
+      +heading-1({tag: 'h1'})
+        |Натяжной потолок
+      +heading-description
+        |«под ключ» за 2 часа
+      +heading-description(class="heading-description_accent")
+        |в Калуге и области
+      +usp
+      +price-block
+      +girl

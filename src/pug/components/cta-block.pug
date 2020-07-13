@@ -1,0 +1,7 @@
+mixin cta-block(props = {})
+  include button
+
+  .cta-block&attributes(attributes)
+    .container
+      +button({tag: 'a'})(class="button_fluid" data-fancybox data-src="#popup-gauge")
+        |Вызвать замерщика БЕСПЛАТНО
