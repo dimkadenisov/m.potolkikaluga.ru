@@ -1,22 +1,20 @@
 "use strict";
 
-var setRangeBackground = function setRangeBackground(target) {
-  var min = target.min || 0;
-  var max = target.max || 100;
-  var percent = (max - min) / 100;
-  var value = (target.value - min) / percent;
-  target.style.background = "linear-gradient(to right, #e50469 ".concat(value, "%, #e5e8ed ").concat(value, "%)");
+const setRangeBackground = target => {
+  const min = target.min || 0;
+  const max = target.max || 100;
+  const percent = (max - min) / 100;
+  const value = (target.value - min) / percent;
+  target.style.background = `linear-gradient(to right, #e50469 ${value}%, #e5e8ed ${value}%)`;
 };
 
-document.body.addEventListener('input', function (e) {
-  var target = e.target.closest('[type="range"]');
+document.body.addEventListener('input', e => {
+  const target = e.target.closest('[type="range"]');
 
   if (target) {
     setRangeBackground(target);
   }
 });
-document.addEventListener('DOMContentLoaded', function () {
-  document.querySelectorAll('[type="range"]').forEach(function (elem) {
-    return setRangeBackground(elem);
-  });
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('[type="range"]').forEach(elem => setRangeBackground(elem));
 });
