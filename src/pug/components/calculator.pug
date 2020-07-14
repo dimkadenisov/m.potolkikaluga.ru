@@ -5,11 +5,12 @@ mixin calculator(props = {})
     span.calculator__heading Расчет стоимости натяжного потолка
     .calculator__content
       label.calculator-input-label.calculator-input-label_prev
-        |Площадь
-        br
-        |потолка,
-        br
-        |м2
+        span
+          |Площадь
+          br
+          |потолка,
+          br
+          |м2
         |
         |
         input(type="number" min="5" max="25" step="1" value="5").calculator-input-label__input

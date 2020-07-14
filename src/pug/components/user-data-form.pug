@@ -1,0 +1,13 @@
+mixin user-data-form(props = {})
+  include input
+  include button
+
+  form.user-data-form&attributes(attributes)
+    +input(placeholder="Введите ваше имя" required="required" type="text" autocomplete="off" autocorrect="off" spellcheck="false" maxlength="50")
+    +input(placeholder="Введите ваш телефон" required="required" type="tel" autocomplete="tel" autocorrect="off" spellcheck="false" maxlength="16")
+    span.user-data-form__privacy Нажимая на кнопку, Вы соглашаетесь на обработку персональных данных и соглашаетесь с
+      |
+      |
+      a(href="/politika1.pdf") политикой конфиденциальности.
+    +button(type="submit" class="button_fluid")
+      block

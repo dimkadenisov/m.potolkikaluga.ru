@@ -2,10 +2,12 @@
 @import 'utilities/reset.scss';
 @import 'utilities/fonts.scss';
 
+@import 'components/advantages-block.scss';
 @import 'components/banner.scss';
 @import 'components/button.scss';
 @import 'components/calculator.scss';
 @import 'components/calculator-block.scss';
+@import 'components/consultation-block.scss';
 @import 'components/container.scss';
 @import 'components/content.scss';
 @import 'components/cta-block.scss';
@@ -13,6 +15,7 @@
 @import 'components/email.scss';
 @import 'components/exact-price-block.scss';
 @import 'components/footer.scss';
+@import 'components/gauge-request-block.scss';
 @import 'components/girl.scss';
 @import 'components/header.scss';
 @import 'components/heading-1.scss';
@@ -29,6 +32,7 @@
 @import 'components/question.scss';
 @import 'components/range.scss';
 @import 'components/social-links.scss';
+@import 'components/user-data-form.scss';
 @import 'components/usp.scss';
 
 @import 'utilities/utilities.scss';

@@ -1,0 +1,11 @@
+mixin gauge-request-block(props = {})
+  include heading-2
+  include user-data-form
+
+  .gauge-request-block&attributes(attributes)
+    +heading-2({tag: 'span'})
+      |Оставьте заявку на вызов замерщика прямо сейчас:
+    +user-data-form
+      |Вызвать замерщика
+      br
+      |и получить подарок

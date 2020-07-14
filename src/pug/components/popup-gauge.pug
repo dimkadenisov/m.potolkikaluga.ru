@@ -1,18 +1,11 @@
 mixin popup-gauge(props = {})
-  include input
-  include button
+  include user-data-form
 
   .popup.popup-gauge#popup-gauge&attributes(attributes)
-    form.popup__content
+    .popup__content
       span.popup__heading
         |Вызвать замерщика
         br
         |БЕСПЛАТНО
-      +input(placeholder="Введите ваше имя" equired="required" type="text" autocomplete="off" autocorrect="off" spellcheck="false" maxlength="50")
-      +input(placeholder="Введите ваш телефон" required="required" type="tel" autocomplete="tel" autocorrect="off" spellcheck="false" maxlength="16")
-      span.popup__privacy Нажимая на кнопку, Вы соглашаетесь на обработку персональных данных и соглашаетесь с
-        |
-        |
-        a(href="/politika1.pdf") политикой конфиденциальности.
-      +button(type="submit" class="button_fluid")
+      +user-data-form
         |Отправить

@@ -1,0 +1,13 @@
+mixin consultation-block(props = {})
+  include user-data-form
+
+  .consultation-block&attributes(attributes)
+    .container
+      span.consultation-block__heading
+        b Остались вопросы?
+        br
+        |Оставьте заявку на бесплатную
+        br
+        |консультацию специалиста
+      +user-data-form
+        |Получить бесплатную консультацию
