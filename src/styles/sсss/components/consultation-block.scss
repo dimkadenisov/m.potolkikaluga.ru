@@ -1,8 +1,9 @@
 .consultation-block {
 	padding-top: 200px;
 	padding-bottom: 70px;
-	background: var(--gray-700) url('/assets/img/logo-white.png') top center
-		no-repeat;
+	background-color: var(--gray-700);
+	background-position: top center;
+	background-repeat: no-repeat;
 	text-align: center;
 
 	&__heading {
