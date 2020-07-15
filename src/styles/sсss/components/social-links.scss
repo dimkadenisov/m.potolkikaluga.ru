@@ -1,5 +1,10 @@
 .social-links {
 	display: flex;
 	align-items: center;
-	gap: 48px;
+
+	.icon-button {
+		&:nth-last-child(n + 2) {
+			margin-right: 48px;
+		}
+	}
 }

@@ -1,0 +1,23 @@
+mixin estimate(props = {})
+
+  - const { estimate, totalPrice, sale } = props;
+  - const transformedEstimate = Object.entries(estimate);
+
+  table.estimate&attributes(attributes)
+    thead
+      tr
+        td Материалы и работа
+        td Стоимость
+    tbody
+      each estimateItem in transformedEstimate
+        - const [key, value] = estimateItem
+        tr
+          td= key
+          td= value
+      tr.sale
+        td Скидка
+        td= `-${sale}`
+    tfoot
+      tr
+        td Итого:
+        td= `${totalPrice} руб.`

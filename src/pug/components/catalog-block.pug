@@ -1,0 +1,66 @@
+mixin catalog-block(props = {})
+  include heading-2
+  include catalog-list
+  -
+    var catalog = [
+      {
+        name: 'Матовый',
+        imgSrc: 'assets/img/matte.jpg',
+        description: 'Безупречно гладкий белоснежный потолок. Антистатичный, гипоаллергенный, без запаха.',
+        price: {
+          oldPrice: '560',
+          newPrice: '280'
+        }
+      },
+      {
+        name: 'Глянцевый',
+        imgSrc: 'assets/img/glossy.jpg',
+        description: 'Зеркальная поверхность расширяет пространство. Более 225 цветов. Антистатичный, гипоаллергенный, без запаха.',
+        price: {
+          oldPrice: '760',
+          newPrice: '380'
+        }
+      },
+      {
+        name: 'Сатиновый',
+        imgSrc: 'assets/img/satin.jpg',
+        description: 'Эффектное жемчужно-перламутровое сочетание матовости и гладкости.',
+        price: {
+          oldPrice: '390',
+          newPrice: '199'
+        }
+      },
+      {
+        name: 'Коллекция Ecoline',
+        imgSrc: 'assets/img/ecoline.jpg',
+        description: 'Идеально для детской, ванной и кухни Защита от плесени, пыли, копоти и жира. Удвоенная гарантия - 20 лет.',
+        price: {
+          oldPrice: '560',
+          newPrice: '280'
+        }
+      },
+      {
+        name: 'С фотопечатью',
+        imgSrc: 'assets/img/photoprint.jpg',
+        description: 'Более 9000 изображений в каталоге. Не выцветает. Гиппоалергенный, эксклюзивный потолок по последнему писку моды. Гарантия 20 лет.',
+        price: {
+          oldPrice: '4000',
+          newPrice: '2500'
+        }
+      },
+      {
+        name: 'С подсветкой',
+        imgSrc: 'assets/img/backlight.jpg',
+        description: 'Светящийся, парящий, многоуровневый.',
+        price: {
+          oldPrice: '2800',
+          newPrice: '1500'
+        }
+      }
+    ]
+
+  .catalog-block&attributes(attributes)
+    .container
+      +heading-2({tag: 'span'})
+        |Каталог потолков
+      +catalog-list({catalog: catalog})

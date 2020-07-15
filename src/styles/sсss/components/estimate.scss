@@ -1,0 +1,53 @@
+.estimate {
+	width: 100%;
+	line-height: 1.1875;
+
+	thead {
+		td {
+			padding-top: 10px;
+			padding-bottom: 10px;
+			background-color: var(--gray-50);
+			font-size: 43px;
+			font-weight: bold;
+		}
+	}
+
+	td {
+		padding-right: 10px;
+		padding-left: 10px;
+		font-size: 37px;
+
+		&:first-child {
+			width: max-content;
+		}
+		&:last-child {
+			text-align: right;
+		}
+	}
+
+	tr.sale {
+		color: var(--primary);
+	}
+
+	tbody {
+		tr {
+			&:first-child {
+				td {
+					border-top: 10px solid transparent;
+				}
+			}
+			&:last-child {
+				td {
+					border-bottom: 20px solid transparent;
+				}
+			}
+		}
+	}
+
+	tfoot {
+		td {
+			font-size: 43px;
+			font-weight: bold;
+		}
+	}
+}

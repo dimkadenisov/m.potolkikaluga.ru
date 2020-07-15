@@ -1,0 +1,31 @@
+mixin gift-block(props = {})
+  include heading-2
+
+  .gift-block&attributes(attributes)(style="background-image: url(assets/img/gift-block-bg.jpg)")
+    .container
+      +heading-2({tag: 'span'})
+        |Сделайте подарок себе и близким
+      +heading-2({tag: 'span'})(class="heading-2_primary")
+        |Каждому клиенту дарим подарок
+        br
+        |Выберите 1 из 6*
+      .gift(style="background-image: url(assets/img/gift.jpg)")
+      table.gift-block__table
+        colgroup
+          col(width="50%")
+          col(width="50%")
+        tr
+          td Скидка 1000 руб.
+          td Микроплинтус
+        tr
+          td Страховка ремонта
+            br
+            |квартиры с покрытием
+            br
+            |250000 руб.
+          td Средство для ухода за
+            br
+            |потолком
+        tr
+          td Потолочные светильники
+          td Бесплатный 3D-макет

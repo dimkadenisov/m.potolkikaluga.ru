@@ -1,0 +1,37 @@
+.saving-block {
+	position: relative;
+	padding-top: 100px;
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: hidden;
+
+	.heading-2 {
+		margin-bottom: 120px;
+	}
+
+	&__text {
+		display: block;
+		font-size: 53px;
+		line-height: 1.1875;
+
+		&_bold {
+			margin-bottom: 80px;
+			font-size: 85px;
+		}
+	}
+
+	&__alert {
+		display: block;
+		margin-bottom: 230px;
+		font-size: 37px;
+	}
+
+	.gauge {
+		position: absolute;
+		right: -20px;
+		bottom: 0;
+		width: 563px;
+		height: 735px;
+	}
+}

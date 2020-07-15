@@ -1,0 +1,10 @@
+mixin catalog-item(props = {})
+  include price
+
+  - const { name, imgSrc, description, price } = props;
+
+  .catalog-item&attributes(attributes)
+    span.catalog-item__name= name
+    img(src=imgSrc alt=`Потолок ${name}`).catalog-item__img
+    span.catalog-item__description= description
+    +price(price)

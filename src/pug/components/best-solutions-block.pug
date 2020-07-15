@@ -1,0 +1,9 @@
+mixin best-solutions-block(props = {})
+  include heading-2
+  include best-solutions-list
+
+  .best-solutions-block&attributes(attributes)
+    .container
+      +heading-2({tag: 'span'})
+        |Наши лучшие решения
+    +best-solutions-list

@@ -1,4 +1,5 @@
 extends ../components/page
+
 include ../components/banner
 include ../components/cta-block
 include ../components/popup-gauge
@@ -9,6 +10,11 @@ include ../components/exact-price-block
 include ../components/consultation-block
 include ../components/gauge-request-block
 include ../components/advantages-block
+include ../components/saving-block
+include ../components/gift-block
+include ../components/catalog-block
+include ../components/best-solutions-block
+include ../components/popup-same-ceiling
 
 block title
   |Главная страница
@@ -20,10 +26,25 @@ block content
     +cta-block
     +calculator-block
     +exact-price-block
-    +consultation-block
+    +catalog-block
+    +gift-block
     +gauge-request-block
+      |Оставьте заявку на вызов
+      br
+      |замерщика прямо сейчас:
     +advantages-block
+    +saving-block
+    +gauge-request-block
+      |Оставьте заявку на бесплатный
+      br
+      |вызов замерщика и получите
+      br
+      |выгодную цену прямо сейчас:
+    +best-solutions-block
+    +consultation-block
+
 
     +popup-gauge
     +popup-includes
     +popup-exact-price
+    +popup-same-ceiling

@@ -1,0 +1,13 @@
+mixin best-solution(props = {})
+  include estimate
+  include button
+
+  - const { name, imgSrc, estimate, sale, totalPrice, index } = props;
+
+  .best-solution&attributes(attributes)
+    span.best-solution__name= name
+    img(src=imgSrc, alt=name).best-solution__img
+    +estimate({estimate: estimate, sale: sale, totalPrice: totalPrice})
+    hr.best-solution__hr
+    +button({tag: 'a'})(data-fancybox=`popup-same-ceiling-${index}` data-src="#popup-same-ceiling")
+      |Хочу такой же потолок

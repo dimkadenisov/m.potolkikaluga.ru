@@ -1,0 +1,17 @@
+mixin saving-block(props = {})
+  include heading-2
+
+  .saving-block&attributes(attributes)(style="background-image: url(assets/img/saving-block-bg.jpg)")
+    .container
+      +heading-2({tag: 'span'})
+        |Экономим Ваше время
+        br
+        |и деньги до 33%
+      span.saving-block__text От замера
+        br
+        |до монтажа
+      b.saving-block__text.saving-block__text_bold 1 день!
+      span.saving-block__alert Работаем в выходные
+        br
+        |и праздники.
+    .gauge(style="background-image: url(assets/img/gauge.png)")

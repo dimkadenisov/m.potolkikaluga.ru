@@ -1,0 +1,11 @@
+mixin popup-same-ceiling(props = {})
+  include user-data-form
+
+  .popup.popup-same-ceiling#popup-same-ceiling&attributes(attributes)
+    .popup__content
+      span.popup__heading
+        |ЗАКАЗАТЬ
+        br
+        |такой же потолок
+      +user-data-form
+        |Отправить

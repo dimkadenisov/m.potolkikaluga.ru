@@ -1,0 +1,12 @@
+mixin price(props = {})
+
+  - const { oldPrice, newPrice } = props;
+
+  .price&attributes(attributes)
+    span.price__from от
+    |
+    |
+    b.price__old= oldPrice
+    |
+    |
+    b.price__new= `${newPrice} руб./м²`

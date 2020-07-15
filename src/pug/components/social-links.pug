@@ -2,6 +2,6 @@ mixin social-links(props = {})
   include icon-button
 
   .social-links&attributes(attributes)
-    +icon-button({tag: 'a', iconId: 'telegram'})(class="icon-button_telegram")
-    +icon-button({tag: 'a', iconId: 'viber'})(class="icon-button_viber")
-    +icon-button({tag: 'a', iconId: 'whatsapp'})(class="icon-button_whatsapp")
+    +icon-button({tag: 'a', iconId: 'telegram'})(class="icon-button_telegram" href="tg://resolve?domain=Master_Potolkovv_bot")
+    +icon-button({tag: 'a', iconId: 'viber'})(class="icon-button_viber" href="viber://pa?chatURI=master_potolkovv_np")
+    +icon-button({tag: 'a', iconId: 'whatsapp'})(class="icon-button_whatsapp" href="whatsapp://send?phone=79105915050")

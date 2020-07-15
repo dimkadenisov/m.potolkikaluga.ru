@@ -1,0 +1,9 @@
+mixin catalog-list(props = {})
+  include catalog-item
+
+  - const { catalog } = props;
+
+  ul.catalog-list&attributes(attributes)
+    each catalogItem in catalog
+      li.catalog-list__item
+        +catalog-item(catalogItem)
