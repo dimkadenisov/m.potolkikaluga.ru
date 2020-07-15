@@ -9,7 +9,7 @@
     <title>Главная страница</title>
 </head>
 
-<body class="grid"><object type="image/svg+xml" style="width: 0; height: 0; display: none;">
+<body><object type="image/svg+xml" style="width: 0; height: 0; display: none;">
         <?xml version="1.0" encoding="utf-8"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <symbol fill="currentColor" viewBox="0 0 32.7 32.7" id="phone" xmlns="http://www.w3.org/2000/svg">
                 <path d="M16.3 0C7.3 0 0 7.3 0 16.3s7.3 16.3 16.3 16.3c.6 0 1-.5 1-1 0-.6-.5-1-1-1C8.4 30.6 2 24.2 2 16.3S8.4 2 16.3 2s14.3 6.4 14.3 14.3c0 3.3-1.8 6.6-4.3 8-.9.5-1.9.8-3 .8.6-.4 1.2-.9 1.6-1.5.1-.1.2-.2.2-.4.3-.8.4-1.7.6-2.5.2-1.1-4.7-3.1-5.1-1.8-.2.5-.4 2-.7 2.5-.3.4-1 .2-1.4-.2-1.1-1-2.4-2.4-3.5-3.5l-.1-.1-.1-.1c-1.1-1.1-2.5-2.3-3.5-3.5-.4-.4-.5-1.1-.2-1.4.4-.3 2-.5 2.5-.7 1.3-.4-.8-5.3-1.8-5.1-.8.2-1.7.2-2.5.6.1.1 0 .2-.2.3-2.8 1.7-3.1 6-.4 9.2 1 1.2 2.1 2.4 3.2 3.6l.1.1.1.1c1.2 1.1 2.5 2.8 4.8 4.3 4.7 3.1 8.3 2.3 10.4 1.1 3.7-2 5.3-6.3 5.3-9.7C32.7 7.3 25.3 0 16.3 0z" />
@@ -57,11 +57,11 @@
             <div class="header__inner"><a class="logo" href="/"><img class="logo__img" src="assets/img/logo.png" alt="Мастер потолков" width="183" height="175" /></a><a class="icon-link" href="tel:74842333482"><svg class="icon-link__icon">
                         <use xlink:href="#phone"></use>
                     </svg><span class="link__text">+7 (4842) 33-34-82</span></a>
-                <div class="social-links"><a class="icon-button icon-button_telegram"><svg class="icon-button__icon">
+                <div class="social-links"><a class="icon-button icon-button_telegram" href="tg://resolve?domain=Master_Potolkovv_bot"><svg class="icon-button__icon">
                             <use xlink:href="#telegram"></use>
-                        </svg></a><a class="icon-button icon-button_viber"><svg class="icon-button__icon">
+                        </svg></a><a class="icon-button icon-button_viber" href="viber://pa?chatURI=master_potolkovv_np"><svg class="icon-button__icon">
                             <use xlink:href="#viber"></use>
-                        </svg></a><a class="icon-button icon-button_whatsapp"><svg class="icon-button__icon">
+                        </svg></a><a class="icon-button icon-button_whatsapp" href="whatsapp://send?phone=79105915050"><svg class="icon-button__icon">
                             <use xlink:href="#whatsapp"></use>
                         </svg></a></div>
             </div>
@@ -84,13 +84,13 @@
         </div>
         <div class="calculator-block"><span class="heading-2 heading-2_black">Рассчитайте стоимость Вашего потолка прямо сейчас</span>
             <div class="calculator"><span class="calculator__heading">Расчет стоимости натяжного потолка</span>
-                <div class="calculator__content"><label class="calculator-input-label calculator-input-label_prev"><span>Площадь<br />потолка,<br />м2</span>
-                        <input class="calculator-input-label__input" type="number" min="5" max="25" step="1" value="5" /></label>
-                    <div class="calculator-range"><span class="calculator-range__segment">5</span><input type="range" min="5" max="25" step="1" style="background-color: linear-gradient(to right, #e50469 50%, #e5e8ed 50%)" /><span class="calculator-range__segment">25</span></div><label class="calculator-input-label calculator-input-label_next">Примерная<br />стоимость
+                <form class="calculator__content"><label class="calculator-input-label calculator-input-label_prev"><span>Площадь<br />потолка,<br />м2</span>
+                        <input class="calculator-input-label__input" type="number" min="5" max="25" step="1" value="5" name="sq" /></label>
+                    <div class="calculator-range"><span class="calculator-range__segment">5</span><input type="range" min="5" max="25" step="1" /><span class="calculator-range__segment">25</span></div><label class="calculator-input-label calculator-input-label_next">Примерная<br />стоимость
 
                         <br />
                         <hr class="calculator-input-label__hr" /><b class="calculator-input-label__summary">8270 руб</b></label>
-                </div>
+                </form>
                 <div class="d_flex"><a class="question" href="#" data-fancybox="popup-includes" data-src="#popup-includes">ЧТО ВХОДИТ В СТОИМОСТЬ?</a></div>
             </div>
         </div>
@@ -101,13 +101,78 @@
                         </svg><span class="link__text">+7 (4842) 33-34-82</span></a><a class="button" data-fancybox="popup-exact-price" data-src="#popup-exact-price"><span class="button__text">Узнать точную стоимость</span></a></div>
             </div>
         </div>
-        <div class="consultation-block" style="background-image: url(assets/img/logo-white.png)">
-            <div class="container"><span class="consultation-block__heading"><b>Остались вопросы?</b><br />Оставьте заявку на бесплатную<br />консультацию специалиста</span>
-                <form class="user-data-form"><input class="input" type="text" placeholder="Введите ваше имя" required="required" autocomplete="off" autocorrect="off" spellcheck="false" maxlength="50" /><input class="input" type="tel" placeholder="Введите ваш телефон" required="required" autocomplete="tel" autocorrect="off" spellcheck="false" maxlength="16" /><span class="user-data-form__privacy">Нажимая на кнопку, Вы соглашаетесь на обработку персональных данных и соглашаетесь с
-                        <a href="/politika1.pdf">политикой конфиденциальности.</a></span><button class="button button_fluid" type="submit"><span class="button__text">Получить бесплатную консультацию</span></button></form>
+        <div class="catalog-block">
+            <div class="container"><span class="heading-2">Каталог потолков</span>
+                <ul class="catalog-list">
+                    <li class="catalog-list__item">
+                        <div class="catalog-item"><span class="catalog-item__name">Матовый</span><img class="catalog-item__img" src="assets/img/matte.jpg" alt="Потолок Матовый" /><span class="catalog-item__description">Безупречно гладкий белоснежный потолок. Антистатичный, гипоаллергенный, без запаха.</span>
+                            <div class="price"><span class="price__from">от</span>
+                                <b class="price__old">560</b>
+                                <b class="price__new">280 руб./м²</b></div>
+                        </div>
+                    </li>
+                    <li class="catalog-list__item">
+                        <div class="catalog-item"><span class="catalog-item__name">Глянцевый</span><img class="catalog-item__img" src="assets/img/glossy.jpg" alt="Потолок Глянцевый" /><span class="catalog-item__description">Зеркальная поверхность расширяет пространство. Более 225 цветов. Антистатичный, гипоаллергенный, без запаха.</span>
+                            <div class="price"><span class="price__from">от</span>
+                                <b class="price__old">760</b>
+                                <b class="price__new">380 руб./м²</b></div>
+                        </div>
+                    </li>
+                    <li class="catalog-list__item">
+                        <div class="catalog-item"><span class="catalog-item__name">Сатиновый</span><img class="catalog-item__img" src="assets/img/satin.jpg" alt="Потолок Сатиновый" /><span class="catalog-item__description">Эффектное жемчужно-перламутровое сочетание матовости и гладкости.</span>
+                            <div class="price"><span class="price__from">от</span>
+                                <b class="price__old">390</b>
+                                <b class="price__new">199 руб./м²</b></div>
+                        </div>
+                    </li>
+                    <li class="catalog-list__item">
+                        <div class="catalog-item"><span class="catalog-item__name">Коллекция Ecoline</span><img class="catalog-item__img" src="assets/img/ecoline.jpg" alt="Потолок Коллекция Ecoline" /><span class="catalog-item__description">Идеально для детской, ванной и кухни Защита от плесени, пыли, копоти и жира. Удвоенная гарантия - 20 лет.</span>
+                            <div class="price"><span class="price__from">от</span>
+                                <b class="price__old">560</b>
+                                <b class="price__new">280 руб./м²</b></div>
+                        </div>
+                    </li>
+                    <li class="catalog-list__item">
+                        <div class="catalog-item"><span class="catalog-item__name">С фотопечатью</span><img class="catalog-item__img" src="assets/img/photoprint.jpg" alt="Потолок С фотопечатью" /><span class="catalog-item__description">Более 9000 изображений в каталоге. Не выцветает. Гиппоалергенный, эксклюзивный потолок по последнему писку моды. Гарантия 20 лет.</span>
+                            <div class="price"><span class="price__from">от</span>
+                                <b class="price__old">4000</b>
+                                <b class="price__new">2500 руб./м²</b></div>
+                        </div>
+                    </li>
+                    <li class="catalog-list__item">
+                        <div class="catalog-item"><span class="catalog-item__name">С подсветкой</span><img class="catalog-item__img" src="assets/img/backlight.jpg" alt="Потолок С подсветкой" /><span class="catalog-item__description">Светящийся, парящий, многоуровневый.</span>
+                            <div class="price"><span class="price__from">от</span>
+                                <b class="price__old">2800</b>
+                                <b class="price__new">1500 руб./м²</b></div>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
-        <div class="gauge-request-block"><span class="heading-2">Оставьте заявку на вызов замерщика прямо сейчас:</span>
+        <div class="gift-block" style="background-image: url(assets/img/gift-block-bg.jpg)">
+            <div class="container"><span class="heading-2">Сделайте подарок себе и близким</span><span class="heading-2 heading-2_primary">Каждому клиенту дарим подарок<br />Выберите 1 из 6*</span>
+                <div class="gift" style="background-image: url(assets/img/gift.jpg)"></div>
+                <table class="gift-block__table">
+                    <colgroup>
+                        <col width="50%" />
+                        <col width="50%" />
+                    </colgroup>
+                    <tr>
+                        <td>Скидка 1000 руб.</td>
+                        <td>Микроплинтус</td>
+                    </tr>
+                    <tr>
+                        <td>Страховка ремонта<br />квартиры с покрытием<br />250000 руб.</td>
+                        <td>Средство для ухода за<br />потолком</td>
+                    </tr>
+                    <tr>
+                        <td>Потолочные светильники</td>
+                        <td>Бесплатный 3D-макет</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="gauge-request-block"><span class="heading-2">Оставьте заявку на вызов<br />замерщика прямо сейчас:</span>
             <form class="user-data-form"><input class="input" type="text" placeholder="Введите ваше имя" required="required" autocomplete="off" autocorrect="off" spellcheck="false" maxlength="50" /><input class="input" type="tel" placeholder="Введите ваш телефон" required="required" autocomplete="tel" autocorrect="off" spellcheck="false" maxlength="16" /><span class="user-data-form__privacy">Нажимая на кнопку, Вы соглашаетесь на обработку персональных данных и соглашаетесь с
                     <a href="/politika1.pdf">политикой конфиденциальности.</a></span><button class="button button_fluid" type="submit"><span class="button__text">Вызвать замерщика<br />и получить подарок</span></button></form>
         </div>
@@ -162,6 +227,264 @@
                 </ul>
             </div>
         </div>
+        <div class="saving-block" style="background-image: url(assets/img/saving-block-bg.jpg)">
+            <div class="container"><span class="heading-2">Экономим Ваше время<br />и деньги до 33%</span><span class="saving-block__text">От замера<br />до монтажа</span><b class="saving-block__text saving-block__text_bold">1 день!</b><span class="saving-block__alert">Работаем в выходные<br />и праздники.</span></div>
+            <div class="gauge" style="background-image: url(assets/img/gauge.png)"></div>
+        </div>
+        <div class="gauge-request-block"><span class="heading-2">Оставьте заявку на бесплатный<br />вызов замерщика и получите<br />выгодную цену прямо сейчас:</span>
+            <form class="user-data-form"><input class="input" type="text" placeholder="Введите ваше имя" required="required" autocomplete="off" autocorrect="off" spellcheck="false" maxlength="50" /><input class="input" type="tel" placeholder="Введите ваш телефон" required="required" autocomplete="tel" autocorrect="off" spellcheck="false" maxlength="16" /><span class="user-data-form__privacy">Нажимая на кнопку, Вы соглашаетесь на обработку персональных данных и соглашаетесь с
+                    <a href="/politika1.pdf">политикой конфиденциальности.</a></span><button class="button button_fluid" type="submit"><span class="button__text">Вызвать замерщика<br />и получить подарок</span></button></form>
+        </div>
+        <div class="best-solutions-block">
+            <div class="container"><span class="heading-2">Наши лучшие решения</span></div>
+            <ul class="best-solutions-list">
+                <li class="best-solutions-list__item">
+                    <div class="container">
+                        <div class="best-solution"><span class="best-solution__name">Белый глянцевый потолок в спальню, 10 м2</span><img class="best-solution__img" src="assets/img/best-solution-1.jpg" alt="Белый глянцевый потолок в спальню, 10 м2" />
+                            <table class="estimate">
+                                <thead>
+                                    <tr>
+                                        <td>Материалы и работа</td>
+                                        <td>Стоимость</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Полотно белое глянцевое, 10 м²</td>
+                                        <td>2800</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Профиль 13 м.п.</td>
+                                        <td>3250</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Крепление под люстру (крючок) 1шт.</td>
+                                        <td>300</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Углы 4 шт.</td>
+                                        <td>0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Замер, доставка</td>
+                                        <td>0</td>
+                                    </tr>
+                                    <tr class="sale">
+                                        <td>Скидка</td>
+                                        <td>-500</td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td>Итого:</td>
+                                        <td>5850 руб.</td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                            <hr class="best-solution__hr" /><a class="button" data-fancybox="popup-same-ceiling-0" data-src="#popup-same-ceiling"><span class="button__text">Хочу такой же потолок</span></a>
+                        </div>
+                    </div>
+                </li>
+                <li class="best-solutions-list__item">
+                    <div class="container">
+                        <div class="best-solution"><span class="best-solution__name">Белый сатиновый потолок в спальню, 14 м²</span><img class="best-solution__img" src="assets/img/best-solution-2.jpg" alt="Белый сатиновый потолок в спальню, 14 м²" />
+                            <table class="estimate">
+                                <thead>
+                                    <tr>
+                                        <td>Материалы и работа</td>
+                                        <td>Стоимость</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Полотно белое сатиновое, 14 м²</td>
+                                        <td>2800</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Профиль 16 м.п.</td>
+                                        <td>4000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Крепление под люстру (крючок) 1шт.</td>
+                                        <td>300</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Углы 4 шт.</td>
+                                        <td>0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Замер, доставка</td>
+                                        <td>0</td>
+                                    </tr>
+                                    <tr class="sale">
+                                        <td>Скидка</td>
+                                        <td>-300</td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td>Итого:</td>
+                                        <td>6800 руб.</td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                            <hr class="best-solution__hr" /><a class="button" data-fancybox="popup-same-ceiling-1" data-src="#popup-same-ceiling"><span class="button__text">Хочу такой же потолок</span></a>
+                        </div>
+                    </div>
+                </li>
+                <li class="best-solutions-list__item">
+                    <div class="container">
+                        <div class="best-solution"><span class="best-solution__name">Белый глянцевый потолок на кухню, 6 м²</span><img class="best-solution__img" src="assets/img/best-solution-3.jpg" alt="Белый глянцевый потолок на кухню, 6 м²" />
+                            <table class="estimate">
+                                <thead>
+                                    <tr>
+                                        <td>Материалы и работа</td>
+                                        <td>Стоимость</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Полотно, белое глянцевое, 6 м²</td>
+                                        <td>1700</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Профиль 10 м.п</td>
+                                        <td>2500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Крепление под люстру (крючок) 1шт.</td>
+                                        <td>300</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Обход трубы, 1 шт</td>
+                                        <td>300</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Углы 4 шт.</td>
+                                        <td>0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Замер, доставка</td>
+                                        <td>0</td>
+                                    </tr>
+                                    <tr class="sale">
+                                        <td>Скидка</td>
+                                        <td>-500</td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td>Итого:</td>
+                                        <td>4300 руб.</td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                            <hr class="best-solution__hr" /><a class="button" data-fancybox="popup-same-ceiling-2" data-src="#popup-same-ceiling"><span class="button__text">Хочу такой же потолок</span></a>
+                        </div>
+                    </div>
+                </li>
+                <li class="best-solutions-list__item">
+                    <div class="container">
+                        <div class="best-solution"><span class="best-solution__name">Белый глянцевый потолок в прихожую, 5 м²</span><img class="best-solution__img" src="assets/img/best-solution-4.jpg" alt="Белый глянцевый потолок в прихожую, 5 м²" />
+                            <table class="estimate">
+                                <thead>
+                                    <tr>
+                                        <td>Материалы и работа</td>
+                                        <td>Стоимость</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Полотно, белое глянцевое, 5 м²</td>
+                                        <td>1400</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Профиль 10 м.п</td>
+                                        <td>2500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Установка светильника, 3 шт.</td>
+                                        <td>1500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Углы, 6 шт (4 бесплатно)</td>
+                                        <td>500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Замер, доставка</td>
+                                        <td>0</td>
+                                    </tr>
+                                    <tr class="sale">
+                                        <td>Скидка</td>
+                                        <td>-500</td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td>Итого:</td>
+                                        <td>5500 руб.</td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                            <hr class="best-solution__hr" /><a class="button" data-fancybox="popup-same-ceiling-3" data-src="#popup-same-ceiling"><span class="button__text">Хочу такой же потолок</span></a>
+                        </div>
+                    </div>
+                </li>
+                <li class="best-solutions-list__item">
+                    <div class="container">
+                        <div class="best-solution"><span class="best-solution__name">Белый сатиновый натяжной потолок в гостиную, 16 м²</span><img class="best-solution__img" src="assets/img/best-solution-5.jpg" alt="Белый сатиновый натяжной потолок в гостиную, 16 м²" />
+                            <table class="estimate">
+                                <thead>
+                                    <tr>
+                                        <td>Материалы и работа</td>
+                                        <td>Стоимость</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Полотно белое сатиновое, 16 м²</td>
+                                        <td>3200</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Профиль 16 м.п.</td>
+                                        <td>4000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Крепление под люстру (крючок) 1шт.</td>
+                                        <td>300</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Углы, 4 шт</td>
+                                        <td>0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Замер, доставка</td>
+                                        <td>0</td>
+                                    </tr>
+                                    <tr class="sale">
+                                        <td>Скидка</td>
+                                        <td>-500</td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td>Итого:</td>
+                                        <td>7000 руб.</td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                            <hr class="best-solution__hr" /><a class="button" data-fancybox="popup-same-ceiling-4" data-src="#popup-same-ceiling"><span class="button__text">Хочу такой же потолок</span></a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="consultation-block" style="background-image: url(assets/img/logo-white.png)">
+            <div class="container"><span class="consultation-block__heading"><b>Остались вопросы?</b><br />Оставьте заявку на бесплатную<br />консультацию специалиста</span>
+                <form class="user-data-form"><input class="input" type="text" placeholder="Введите ваше имя" required="required" autocomplete="off" autocorrect="off" spellcheck="false" maxlength="50" /><input class="input" type="tel" placeholder="Введите ваш телефон" required="required" autocomplete="tel" autocorrect="off" spellcheck="false" maxlength="16" /><span class="user-data-form__privacy">Нажимая на кнопку, Вы соглашаетесь на обработку персональных данных и соглашаетесь с
+                        <a href="/politika1.pdf">политикой конфиденциальности.</a></span><button class="button button_fluid" type="submit"><span class="button__text">Получить бесплатную консультацию</span></button></form>
+            </div>
+        </div>
         <div class="popup popup-gauge" id="popup-gauge">
             <div class="popup__content"><span class="popup__heading">Вызвать замерщика<br />БЕСПЛАТНО</span>
                 <form class="user-data-form"><input class="input" type="text" placeholder="Введите ваше имя" required="required" autocomplete="off" autocorrect="off" spellcheck="false" maxlength="50" /><input class="input" type="tel" placeholder="Введите ваш телефон" required="required" autocomplete="tel" autocorrect="off" spellcheck="false" maxlength="16" /><span class="user-data-form__privacy">Нажимая на кнопку, Вы соглашаетесь на обработку персональных данных и соглашаетесь с
@@ -185,17 +508,23 @@
                         <a href="/politika1.pdf">политикой конфиденциальности.</a></span><button class="button button_fluid" type="submit"><span class="button__text">Отправить</span></button></form>
             </form>
         </div>
+        <div class="popup popup-same-ceiling" id="popup-same-ceiling">
+            <div class="popup__content"><span class="popup__heading">ЗАКАЗАТЬ<br />такой же потолок</span>
+                <form class="user-data-form"><input class="input" type="text" placeholder="Введите ваше имя" required="required" autocomplete="off" autocorrect="off" spellcheck="false" maxlength="50" /><input class="input" type="tel" placeholder="Введите ваш телефон" required="required" autocomplete="tel" autocorrect="off" spellcheck="false" maxlength="16" /><span class="user-data-form__privacy">Нажимая на кнопку, Вы соглашаетесь на обработку персональных данных и соглашаетесь с
+                        <a href="/politika1.pdf">политикой конфиденциальности.</a></span><button class="button button_fluid" type="submit"><span class="button__text">Отправить</span></button></form>
+            </div>
+        </div>
     </main>
     <div class="footer">
         <div class="container">
             <div class="footer__content"><a class="icon-link" href="tel:74842333482"><svg class="icon-link__icon">
                         <use xlink:href="#phone"></use>
                     </svg><span class="link__text">+7 (4842) 33-34-82</span></a>
-                <div class="social-links"><a class="icon-button icon-button_telegram"><svg class="icon-button__icon">
+                <div class="social-links"><a class="icon-button icon-button_telegram" href="tg://resolve?domain=Master_Potolkovv_bot"><svg class="icon-button__icon">
                             <use xlink:href="#telegram"></use>
-                        </svg></a><a class="icon-button icon-button_viber"><svg class="icon-button__icon">
+                        </svg></a><a class="icon-button icon-button_viber" href="viber://pa?chatURI=master_potolkovv_np"><svg class="icon-button__icon">
                             <use xlink:href="#viber"></use>
-                        </svg></a><a class="icon-button icon-button_whatsapp"><svg class="icon-button__icon">
+                        </svg></a><a class="icon-button icon-button_whatsapp" href="whatsapp://send?phone=79105915050"><svg class="icon-button__icon">
                             <use xlink:href="#whatsapp"></use>
                         </svg></a></div><span class="adress">г. Калуга, ул. Ленина, 102/ул. Театральная, 6, офис 4</span><a class="email" href="mailto:info@potolkikaluga.ru">info@potolkikaluga.ru</a>
                 <ul class="footer-menu">
