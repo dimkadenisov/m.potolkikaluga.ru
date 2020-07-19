@@ -4,5 +4,5 @@ mixin icon-link(props = {})
 
   a.icon-link(href="#")&attributes(attributes)
     svg.icon-link__icon
-      use(xlink:href=`#${iconId}`)
+      use(href=`#${iconId}`)
     span.link__text= text

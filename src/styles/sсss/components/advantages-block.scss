@@ -42,6 +42,8 @@
 		background-size: contain;
 	}
 
-	&__heading {
+	&__heading,
+	&__tagline {
+		display: block;
 	}
 }
