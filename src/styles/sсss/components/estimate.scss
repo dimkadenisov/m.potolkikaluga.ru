@@ -21,6 +21,7 @@
 			width: max-content;
 		}
 		&:last-child {
+			border-left: 6px solid white;
 			text-align: right;
 		}
 	}

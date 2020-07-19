@@ -4,17 +4,19 @@
 	justify-content: center;
 	min-height: 120px;
 	padding-top: 12px;
-	padding-right: 38px;
+	padding-right: 60px;
 	padding-bottom: 12px;
-	padding-left: 38px;
+	padding-left: 60px;
 	background-color: var(--primary);
 	border: none;
 	border-radius: 50px;
 	color: var(--white);
 	font-family: var(--FiraSans);
-	font-size: 40px;
+	font-size: 44px;
+	line-height: 1;
 	text-align: center;
 	text-decoration: none;
+	letter-spacing: 0.03em;
 	cursor: pointer;
 	transition: background-color 0.2s ease;
 
