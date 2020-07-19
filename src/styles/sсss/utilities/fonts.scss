@@ -1,6 +1,7 @@
 @font-face {
 	font-family: 'FiraSans';
-	src: local('Fira Sans Medium'), local('FiraSansMedium'), local('FiraSans-Medium'), local('Fira-Sans-Medium'),
+	src: local('Fira Sans Medium'), local('FiraSansMedium'),
+		local('FiraSans-Medium'), local('Fira-Sans-Medium'),
 		url('../assets/fonts/FiraSans-Medium.ttf') format('ttf');
 	font-weight: normal;
 	font-style: normal;
@@ -9,7 +10,8 @@
 
 @font-face {
 	font-family: 'FiraSans';
-	src: local('Fira Sans Bold'), local('FiraSansBold'), local('FiraSans-Bold'), local('Fira-Sans-Bold'),
+	src: local('Fira Sans Bold'), local('FiraSansBold'), local('FiraSans-Bold'),
+		local('Fira-Sans-Bold'),
 		url('../assets/fonts/FiraSans-Bold.ttf') format('ttf');
 	font-weight: bold;
 	font-style: normal;
