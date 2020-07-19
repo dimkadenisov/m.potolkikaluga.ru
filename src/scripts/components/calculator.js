@@ -23,7 +23,6 @@ const prices = {
 };
 
 document.body.addEventListener('input', e => {
-	console.log(123);
 	const target = e.target.closest('.calculator-range [type="range"]');
 	if (target) {
 		target
