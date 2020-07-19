@@ -27,7 +27,8 @@ document.body.addEventListener('input', e => {
   const target = e.target.closest('.calculator-range [type="range"]');
 
   if (target) {
-    target.closest('.calculator').querySelector('.calculator-input-label__summary').innerText = `${prices[target.value]} руб.`;
+    target.closest('.calculator__content').querySelector('.calculator-input-label__summary').innerText = `${prices[target.value]} руб.`;
+    target.closest('.calculator__content').querySelector('.calculator-input-label__input').value = target.value;
   }
 });
 document.body.addEventListener('submit', e => {
