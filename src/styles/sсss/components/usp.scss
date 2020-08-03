@@ -1,8 +1,74 @@
 .usp {
-	display: flex;
-	justify-content: center;
+	width: 530px;
+	height: 530px;
+	margin: 0 auto;
+	background-image: url(/assets/img/usp.png);
+	background-position: center center;
+	background-size: contain;
+	background-repeat: no-repeat;
 
-	&__img {
-		flex: 0 1 526px;
+	&__date {
+		display: block;
+		margin-right: 80px;
+		padding-top: 30px;
+		color: var(--white);
+		font-size: 42px;
+		line-height: 1;
+		text-align: right;
+	}
+
+	&__price {
+		display: flex;
+		justify-content: center;
+		padding-top: 40px;
+		color: #09469d;
+		font-weight: bold;
+
+		.middle-price-value {
+			display: inline-block;
+			vertical-align: top;
+			font-size: 210px;
+			line-height: 1;
+			letter-spacing: -5px;
+		}
+
+		.middle-price-markings {
+			display: inline-block;
+			vertical-align: top;
+			margin: 0 0 0 3px;
+			font-size: 70px;
+			line-height: 1.3;
+		}
+
+		.middle-price-markings-rubl {
+			width: 40px;
+			border-bottom: 2px solid;
+		}
+	}
+
+	&__text {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-top: 40px;
+		color: var(--black);
+		line-height: 0.8;
+
+		.bottom-plus {
+			padding: 0 3px 0 0;
+			font-weight: 400;
+			font-size: 50px;
+		}
+
+		.bottom-text-line-one {
+			font-weight: 800;
+			font-size: 55px;
+			text-transform: uppercase;
+		}
+
+		.bottom-text-line-two {
+			font-weight: 700;
+			font-size: 55px;
+		}
 	}
 }

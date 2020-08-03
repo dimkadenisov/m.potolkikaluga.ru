@@ -1,4 +1,16 @@
 mixin usp(props = {})
 
-  .usp&attributes(attributes)
-    img.usp__img(width="526" height="530" src="assets/img/usp.png" alt="Акция до 19 июля натяжной потолок по цене 199₽/м²!")
+  .usp
+    .usp__date до 09.08
+    .usp__price
+      .middle-price-value 199
+      .middle-price-markings
+        .middle-price-markings-rubl ₽
+        |
+        |
+        |м²
+    .usp__text
+      .bottom-plus +
+      .bottom-text
+        .bottom-text-line-one Светильники
+        .bottom-text-line-two в подарок
